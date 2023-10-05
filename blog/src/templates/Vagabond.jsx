@@ -2,7 +2,7 @@ const Vagabond = () => {
     return (
       <div>
         <div>
-          <h1>Hello world</h1>
+          <h1>Hello vagabond</h1>
         </div>
       </div>
     );
