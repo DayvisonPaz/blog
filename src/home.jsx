@@ -26,7 +26,7 @@ export default  function Home(data){
   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{e.About}</p>
 </div>
 </a>
-)):<h1>carregadno</h1>
+)):<h1>carregando</h1>
 
 
 }

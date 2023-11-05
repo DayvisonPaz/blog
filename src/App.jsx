@@ -7,7 +7,10 @@ import Vagabond from "./templates/Vagabond"
 import axios from 'axios';
 function App() {
 
-    const components = [<Berserk/>,<Vagabond/>]
+    let pages= {"Berserk":<Berserk/>,"Vagabond":<Vagabond/>}
+
+
+    
     const [posts,setPosts] = useState([])
     useEffect(() => { run()
       async function run(){
@@ -16,9 +19,8 @@ function App() {
     
     
     }}, []);
-      
-
-    const myroutes = posts.map((e)=><Route path={`/${e.route}`} key={e.post}  element={components[e.post] } />)
+      console.log("valor de Berserk:",pages["Berserk"])
+    const myroutes = posts.map((e)=><Route path={`/${e.route}`} key={e.post}  element={pages[`${e.route}`] } />)
   return (
     <BrowserRouter>
     <Routes>
